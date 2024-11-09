@@ -52,7 +52,7 @@ class ModelTrainer:
             }
 
             params = {
-                "Decision Tree":
+                "Decision Tree":[0.1]
             }
             model_report = dict = evaluate_models(X_train,X_test,y_train,y_test,models)
 
@@ -65,4 +65,5 @@ class ModelTrainer:
             return best_model_name,best_model_score, model_report
         except Exception as e:
             raise CustomException(e,sys)
+
 
