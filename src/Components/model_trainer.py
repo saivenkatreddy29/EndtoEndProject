@@ -51,6 +51,9 @@ class ModelTrainer:
                 "AdaBoost Regressor": AdaBoostRegressor()
             }
 
+            params = {
+                "Decision Tree":
+            }
             model_report = dict = evaluate_models(X_train,X_test,y_train,y_test,models)
 
             best_model_name = max(model_report,key = model_report.get)
